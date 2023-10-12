@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+/* above 2 lines are boiler plate of css */
+#container{
+    width: 250px;
+    height: 370px;
+    box-shadow: rgba(217, 195, 195, 0.35) 0px 5px 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #313949;  
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: #837d7d; */
+    background: linear-gradient(to right, #294a7a, #006f9b, #009297, #00b072, #9cc441);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+#buttons
+{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    column-gap: 6px;
+    row-gap: 6px;
+    justify-content: center;
+   
+
+   
+}
+button{
+     border-radius: 50%;
+     border: 0;
+     /* box-shadow: rgba(255, 255, 255, 0.15) -1.95px -1.95px 2.6px; */
+     background-color: #4d5668;
+     cursor: pointer;
+     color: aliceblue;
+    
+   
+      position: relative;
+      transition: .2s;
+}
+/* .hover-button{
+   
+} */
+
+button:hover{
+    transform: translateY(-5px);
+}
+#inputbox
+{
+    display: flex;
+    justify-content: center;
+}
+input
+{
+    padding: 9px;
+    margin-bottom: 7px;
+    width: 218px;
+    /* border: 0px 0px 1px 0px; */
+    border: 0;
+    outline: 0;
+    background-color: #313949;
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+    /* direction:RTL; not working properly */
+    text-align: right;
+    /* or end */
+    
+    /* The direction property specifies the text direction/writing direction within a block-level element. */
+}
+.operator-size
+{
+  font-size: 20px;
+  color: orange;
+}
+.clr
+{
+    color: orange;
+}
+hr { 
+    margin: 0; /* Remove default margins to make the line flush with the edges */
+    border: none; /* Remove border */
+    width: 200px;
+    height: 1px;
+    margin-bottom: 20px;
+    background-color: rgb(149, 155, 161);
+   
+}
+
+
